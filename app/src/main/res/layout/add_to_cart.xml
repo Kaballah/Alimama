@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/samsung_galaxy_s22_ultra" />
+
+    <TextView
+        android:id="@+id/textView303"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView304"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-160dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 256GB\nRAM Size: 12GB\nMain Camera: 108MP\nSelfie Camera: 40MP\nAndroid 12, Upgradable to 13\n1440 X 3088 Pixels\nNano-SIM and eSIM\nDynamic AMOLED Display"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView305"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-330dp"
+        android:layout_marginTop="120dp"
+        android:text="KSH."
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView306"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView307"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ratings"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="180dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible"
+        android:numStars="5"/>
+
+    <TextView
+        android:id="@+id/textView308"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-130dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 1TB\nRAM Size: 6GB\nMain Camera: 48MP\nSelfie Camera: 12MP\niOS 16, Upgradable to 16.0.2\n1179 X 2556 Pixels\neSIM\nXDR OLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView309"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-195dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 256GB\nRAM Size: 12GB\nMain Camera: 50MP\nSelfie Camera: 16MP\nChipset: Snapdragon 778G+\n1080 X 2400 Pixels\nDual Nano-SIM\nOLED Display"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView310"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 256GB\nRAM Size: 8GB\nMain Camera: 64MP\nSelfie Camera: 10MP\nAndroid 11, upgradable to 13\n1080 X 2400 Pixels\nNano-SIM and eSIM\nDynamic AMOLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView311"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 1TB\nRAM Size: 12GB\nMain Camera: 50MP\nSelfie Camera: 10MP, 4MP\nChipset: Snapdragon 8+ Gen 1\n1812 x 2176 Pixels and \n904 x 2316 Pixels\nNano-SIM and eSIM\nFoldable Dynamic AMOLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView312"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 512GB\nRAM Size: 4GB\nMain Camera: 12MP\nSelfie Camera: 12MP\nChipset: Apple A15 Bionic\n1170 x 2532 Pixels \nNano-SIM and eSIM\nSuper Retina XDR OLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView313"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 512GB\nRAM Size: 16GB\nMain Camera: 108MP\nSelfie Camera: 40MP\nChipset: Exynos 2100\n1440 x 3200 Pixels \nNano-SIM and eSIM\nDynamic AMOLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView314"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 256GB\nRAM Size: 12GB\nMain Camera: 48MP\nSelfie Camera: 16MP\nChipset: Snapdragon 888 5G\n1440 x 3216 Pixels \nNano-SIM\nLTPO Fluid2 AMOLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView315"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 128GB\nRAM Size: 6GB\nMain Camera: 48MP\nSelfie Camera: 13MP\nChipset: Snapdragon 678\n1080 x 2400 Pixels \nNano-SIM\nSuper AMOLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView316"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Internal Storage: 256GB\nRAM Size: 8GB\nMain Camera: 12MP\nSelfie Camera: 10MP\nChipset: Snapdragon 8+ Gen 1\n1080 x 2640 Pixels \nNano-SIM and eSIM\nFoldable Dynamic AMOLED"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView317"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Dimension: 57.0×33.0×3.0 inch\nSmart TV: Yes\nResolution: 4K\nConnectivity: WiFi, Bluetooth, Ethernet\nHDMI Port: Yes\nEthernet Port: Yes\nUSB Port: 2\nWarranty: 2 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView318"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-205dp"
+        android:layout_marginTop="40dp"
+        android:text="Dimension: 48.5 x 30.5 x 9.8\nOperating System: Tizen™\nResolution: 4K\nConnectivity: WiFi, Bluetooth, Ethernet\nHDMI Port: Yes\nEthernet Port: Yes\nUSB Port: 3\nWarranty: 2 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView319"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-205dp"
+        android:layout_marginTop="40dp"
+        android:text="Dimension: 964*561*207 mm\nRAM: 1GB\nROM: 8GB\nResolution: 4K\nConnectivity: Bluetooth, Ethernet\nHDMI Port: Yes\nEthernet Port: Yes\nUSB Port: 2\nWarranty: 1 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView320"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Football Mode\nRecord to USB\nResolution: 1080p\nConnectivity: WiFi, Bluetooth\nHDMI Port: 3\nEthernet Port: Yes\nUSB Port: 2\nWarranty: 1 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView321"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Dimension: 55.9 x 32.9 x 6.9\nOperating System: webOS\nResolution: 4K Ultra HD\nConnectivity: WiFi, Ethernet\nHDMI Port: 3\nEthernet Port: 1\nUSB Port: 2\nWarranty: 2 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView322"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Frameless\nRAM: 1GB\nROM: 8GB\nResolution: HD ready\nConnectivity: WiFi, Bluetooth\nHDMI Port: Yes\nOperating System: Android 9.0\nUSB Port: 1\nWarranty: 1 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView323"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Dimension: 1683*62.1*968.1 mm\nFrameless\nResolution: 4K\nConnectivity: WiFi, Bluetooth\nHDMI Port: 2\nSupports USB Video\nUSB Port: 2\nWarranty: 1 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView324"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="LG Cinema 3D\nDimension: 37.91*24.84*11.65\nResolution: 4K\nConnectivity: WiFi, Bluetooth, Ethernet\nHDMI Port: 3\nEthernet Port: Yes\nUSB Port: 3\nWarranty: 1 Years"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView325"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Alienware\nScreen Size: 34 Inches\nDisplay: 3440 x 1440 Pixels\nAspect Ratio: 21:9\nRefresh Rate: 120Hz\nResolution: WQHD\n1900R curved and wide display"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView326"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Samsung\nScreen Size: 34 Inches\nDisplay: 3440 x 1440 Pixels\nAspect Ratio: 21:9\nRefresh Rate: 100Hz\nResolution: WQHD\nQLED technology"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView327"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Brand: Apple\nScreen Size: 32 Inches\nDisplay: 6016 x 3384 Pixels\nExtreme Dynamic Range\nRefresh Rate: 60Hz\nResolution: Retina 6K\nSuperwide viewing angle"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView328"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Brand: Dell\nScreen Size: 22 Inches\nDisplay: 1920x1080 Pixels\nDisplayPort and VGA Connectors\nRefresh Rate: 120Hz\nSuperSpeed USB Port\nHDMI port"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView329"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Dell\nScreen Size: 24 Inches\nDisplay: 1920 x 1200 Pixels\nAspect Ratio: 16:10\nRefresh Rate: 60Hz\nRJ45 and USB-C Present\n3-year Advanced Exchange\nService"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView330"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Brand: HP\nScreen Size: 27 Inches\nDisplay: 1920 x 1080 Pixels\nUltra-Wide Viewing Angles\nRefresh Rate: 60Hz\nResolution: Full HD\nOne-Year Limited Warranty"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView331"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Brand: HP\nScreen Size: 27 Inches\nDisplay: 2560 x 1440 Pixels\nAspect Ratio: 16:9\nRefresh Rate: 75Hz\nResolution: QHD\nIPS LED-Backlit Panel"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView332"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="40dp"
+        android:text="Brand: LG\nScreen Size: 43 Inches\nDisplay: 3840 x 2160 Pixels\nAspect Ratio: 16:9\nRefresh Rate: 60Hz\nResolution: UHD\nHDR10 support"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView333"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: LG\nScreen Size: 27 Inches\nDisplay: 2560 x 1440 Pixels\nCompatible Video Cards\nRefresh Rate: 144Hz\nResolution: QHD\nNano IPS display"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView334"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Beats\nColor: Defiant Black-Red\nEar Placement: Over Ear\nCompatible with iOS and Android\nNoise Cancelling Headphones\nUp to 22 Hours Battery Life\nNano IPS display"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView335"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: JBL\nColor: White\nEar Placement: Over Ear\nAmbient Aware technology\nAdaptive Noise Cancelling\nRock on for up to 50 hours\nAlexa features"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView336"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: JBL\nColor: Blue\nEar Placement: On Ear\nWired Headphones\nTangle-free flat cable\nLightweight and foldable design\nPure Bass sound"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView337"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Beats\nColor: Black\nEar Placement: In Ear\nFlexible, secure-fit wingtips\nSpatial Audio\nExpress Replacement Service\nCompatible with iOS and Android"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView338"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Apple\nColor: Macron\nEar Placement: In Ear\nAdaptive EQ\nActive noise cancellation\nSweat and water resistant\n24 hours of battery life"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView339"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Oraimo\nColor: Black\nEar Placement: Over Ear\nDual Noise Sensor technology\n30-hour battery life\nAdaptive Sound Control"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView340"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Oraimo\nColor: Black\nEar Placement: In Ear\nStable and Comfortable\nFaster Type-C Charging\nFantastic Stereo Sound\nPunchy Bass"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView341"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Bilikay\nColor: Blue\nEar Placement: Over Ear\n40mm dynamic diaphragm\nTriple-band Equalization\nLong Battery Life\nHiFi Sound Quality"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView342"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Full-Touch 2.5D Curved Display\nColor: Midnight Blue\nBluetooth Version: 4.2\nWorking Time: Up to 8Days\nBattery Capacity: 210mAh\nCharging Type: USB Direct Charge"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView343"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="1.3 Inch HD Display\nColor: Black\n30 Sports Mode\nIP68 Waterproof\nUp to 7Days Normal Use\nInBuilt Games"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView344"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Google\nColor: Matte Black with Obsidian\nWear OS by Google\nWith Emergency SOS\nScratch-resistant Gorilla(R) Glass"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView345"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Google\nColor: Matte Black\nWear OS by Google\nNew Model-Family Care\nBattery Saving Screen\nBuilt-in GPS"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView346"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Huawei\nColor: Beige\nAmazfit OS\n1.65 Inch AMOLED Display\n14-Days Battery Life\nBluetooth Music Control"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView347"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Amazfit\nColor: Space Black\nAmazfit OS\n1.69 Inch HD Display\nWater-resistance at 5ATM\n60 Plus Sports Modes"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView348"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Realme\nColor: Black\nBattery Life: 12 days\n1.4 Inches Display\nLife and Fitness Companion\nIP68 Waterproof"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView349"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Verizon\nColor: Black\nQualcomm Processor\nAMOLED 1.3 Inches Display\nRAM: 512MB ROM: 4GB\nBattery Capacity: 510mAh"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView350"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Canon\nLens: 18-135mm\nResolution: 32.5MP\nISO: 25600\nAdvanced Image Processing\nRecord UHD 4k30p"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView351"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Nikon\nLens: 18-135mm\nResolution: 26.2MP\nISO: 6400\nShoot up to 6 fps\nRecords FHD 1080p"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView352"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Samsung\nSuper Clear LCD Display\nResolution: 16.3MP\nChipset: Exynos 4412 Quad\nRAM: 1GB ROM 4GB\n21x Optical Zoom"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView353"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Sony\n50X Optical Zooming\nResolution: 20.4MP\nSilky-smooth FHD Video\nImage Processor: 10fps\nAnti-motion Blur"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView354"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Canon\nLens: 18-55mm\nResolution: 24.1MP\nISO: 6400\nDIGIC 4+ Image Processor\nFHD 1080/30p Video Recording"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView355"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Canon\nLens: 18-135mm\nResolution: 24.1MP\nISO: 25600\nDIGIC 8 Image Processor\nUHD 4k Recording"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView356"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Nikon\nTilting RGB LCD Touchscreen\nClarity, Speed and Resolution\nISO: 51200\nWiFi Compatibility\nCinematic 4K UHD Video"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView357"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Nikon\nLens: 18-135mm\nResolution: 24.5MP\nISO: 51200\nShooting Rate: 7fps\nRecord UHD 4k"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView358"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="60dp"
+        android:text="Brand: Sony\nWith Party Mode\nResolution: 20.5MP\n63X Optical Zoom\nOptical SteadyShot Image Stabilization\n30Inch LCD Display"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView325"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginStart="-200dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="Internal Storage: 256GB\nRAM Size: 8GB\nMain Camera: 12MP\nSelfie Camera: 10MP\nChipset: Snapdragon 8+ Gen 1\n1080 x 2640 Pixels \nNano-SIM and eSIM\nFoldable Dynamic AMOLED"-->
+<!--        android:textSize="16sp"-->
+<!--        android:visibility="invisible"/>-->
+
+</LinearLayout>

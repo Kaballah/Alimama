@@ -1,0 +1,2369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:scrollbarSize="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/searchView"
+                android:divider="#ad5"
+                android:dividerHeight="2dp" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="380dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:queryHint="Search Here"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="SMARTPHONES"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="175dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/samsung_galaxy_s22_ultra" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Samsung Galaxy s22 Ultra"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-165dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH."
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="140dp"
+                                android:text="180000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/iphone_14_pro" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Iphone 14 Pro"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-150dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="viewEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-30dp"
+                                android:layout_marginTop="140dp"
+                                android:text="195000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/nothing_phone" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Nothing Phone"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-145dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-35dp"
+                                android:layout_marginTop="140dp"
+                                android:text="90000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/samsung_galaxy_s21" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Samsung Galaxy s21"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="87000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/samsung_galaxy_z_fold_4" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Samsung Galaxy Z-fold 4"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="125000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageViewi6"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/iphone_13" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="iPhone 13"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="89990"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/samsung_galaxy_s21_ultra" />
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Samsung Galaxy s21 Ultra"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="99000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/oneplus_9" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="OnePlus 9"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="125000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/redmi_note_10" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Redmi Note 10"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView28"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="25000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/samsung_galaxy_z_flip_4" />
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_marginRight="0dp"
+                                android:text="Samsung Galaxy Z-flip 4"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView30"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:layout_marginRight="0dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView401"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:layout_marginRight="0dp"
+                                android:text="120000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="TELEVISION"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="175dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/hisense_65_smart_tv" />
+
+                            <TextView
+                                android:id="@+id/textView32"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Hisense 65 Inch Smart TV "
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView33"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-165dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH."
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView34"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="140dp"
+                                android:text="75000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/samsung_55_smart_tv" />
+
+                            <TextView
+                                android:id="@+id/textView35"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Samsung 55 Inch Smart TV"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView36"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-150dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="viewEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView37"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-30dp"
+                                android:layout_marginTop="140dp"
+                                android:text="59999"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/vision_43_android_smart" />
+
+                            <TextView
+                                android:id="@+id/textView38"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Vision 43 Inch Android TV"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView39"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-145dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView40"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-35dp"
+                                android:layout_marginTop="140dp"
+                                android:text="29000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/vitron_40_smart_tv" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Vitron 40 Inch Smart Tv"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView43"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="25700"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/lg_55_4k_ultra_hd_smart_tv" />
+
+                            <TextView
+                                android:id="@+id/textView44"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="LG 4K Ultra 55 Inch Smart TV"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView45"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView46"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="55500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/itel_32_digital_tv" />
+
+                            <TextView
+                                android:id="@+id/textView47"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Itel 32 Inch Digital Tv"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView48"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView49"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="18900"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/syinix_75_smart_android_tv" />
+
+                            <TextView
+                                android:id="@+id/textView50"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Syinix 75 Inch Smart Android Tv"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView51"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView52"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="92999"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/lg_smart_tv_42_cinema_3d" />
+
+                            <TextView
+                                android:id="@+id/textView53"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="LG 42 Inch 3D Cinematic Smart TV"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView55"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="50500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="MONITORS"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="175dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView21"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/alienware_34_inch_oled_gaming_monitor" />
+
+                            <TextView
+                                android:id="@+id/textView62"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Alienware 34 Inch OLED Gaming Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView63"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-165dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH."
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView64"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="140dp"
+                                android:text="60000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView22"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/_4_inch_curved_monitor_samsung" />
+
+                            <TextView
+                                android:id="@+id/textView65"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="34 Inch Curved Samsung Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView66"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-150dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="viewEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView67"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-30dp"
+                                android:layout_marginTop="140dp"
+                                android:text="43500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView23"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/apple_pro_xdr_6k_display" />
+
+                            <TextView
+                                android:id="@+id/textView68"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Apple Pro XDR 6K Display"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView69"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-145dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView70"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-35dp"
+                                android:layout_marginTop="140dp"
+                                android:text="68000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView24"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/dell_22_inch_led_monitor" />
+
+                            <TextView
+                                android:id="@+id/textView71"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Dell 22 Inch LED Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView72"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView73"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="19200"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView25"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/dell_ultrashap_24_monitor" />
+
+                            <TextView
+                                android:id="@+id/textView74"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Dell UltraSharp 24 Inch Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView75"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView76"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="22500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView26"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/hp_m27f_fhd_monitor" />
+
+                            <TextView
+                                android:id="@+id/textView77"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="HP M27F FHD Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView78"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView79"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="30999"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView27"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/hp_pavilion_27_inch_monitor" />
+
+                            <TextView
+                                android:id="@+id/textView80"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="HP Pavilion 27 Inch Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView81"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView82"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="31799"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView28"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/lg_4k_uhd_43_inch_monitor" />
+
+                            <TextView
+                                android:id="@+id/textView83"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="LG 4K UHD 43 Inch Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView84"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView85"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="41500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView29"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/lg_27_inch_ultragear_qhd_monitor" />
+
+                            <TextView
+                                android:id="@+id/textView86"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="LG 27 Inch UltraGear QHD Monitor"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView87"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView88"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="29599"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+                <TextView
+                    android:id="@+id/textView91"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="EARWEAR"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="175dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView31"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/beats_by_dr_dre_headphones" />
+
+                            <TextView
+                                android:id="@+id/textView92"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Beats by Dr. Dre Headphones"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView93"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-165dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH."
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView94"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="140dp"
+                                android:text="13000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView32"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/jbl_660nc_wireless_headphones" />
+
+                            <TextView
+                                android:id="@+id/textView95"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="JBL 660NC Wireless Headphones"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView96"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-150dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="viewEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView97"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-30dp"
+                                android:layout_marginTop="140dp"
+                                android:text="11800"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView33"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/jbl_tune_500_wireless_headphones" />
+
+                            <TextView
+                                android:id="@+id/textView98"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="JBL Tune 500 Wireless Headphones"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView99"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-145dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView100"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-35dp"
+                                android:layout_marginTop="140dp"
+                                android:text="8000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView34"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/kim_kardashian_beats_fit_pro_earbuds" />
+
+                            <TextView
+                                android:id="@+id/textView101"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Kim Kardashian Beats Fit Pro Earbuds"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView102"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView103"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="9999"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView35"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/macaron_airpods_pro_earbuds" />
+
+                            <TextView
+                                android:id="@+id/textView104"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Macron AirPods Pro Earbuds"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView105"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView106"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="4599"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView36"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/oraimo_bluetooth_headphones" />
+
+                            <TextView
+                                android:id="@+id/textView107"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Oraimo Bluetooth Headphones"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView108"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView109"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="7290"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView37"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/oraimo_freepod_3_tws_earbuds" />
+
+                            <TextView
+                                android:id="@+id/textView110"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Oraimo FreePod 3 TWS Earbuds"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView111"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView112"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="6199"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView38"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/vj033_wireless_stereo_headphones" />
+
+                            <TextView
+                                android:id="@+id/textView113"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="VJ033 Wireless Stereo Headphones"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView114"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView115"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="5500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+                <TextView
+                    android:id="@+id/textView121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="SMARTWATCH"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="175dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView41"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/boat_storm_smartwatch" />
+
+                            <TextView
+                                android:id="@+id/textView122"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="BoAT Storm Smartwatch"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView123"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-165dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH."
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView124"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="140dp"
+                                android:text="3000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView42"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/fire_boltt_ninja_2_smartwatch" />
+
+                            <TextView
+                                android:id="@+id/textView125"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Fire Boltt Ninja 2 Smartwatch"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView126"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-150dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="viewEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView127"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-30dp"
+                                android:layout_marginTop="140dp"
+                                android:text="1800"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView43"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/google_pixel_smartwatch" />
+
+                            <TextView
+                                android:id="@+id/textView128"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Google Pixel Smartwatch"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView129"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-145dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView130"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-35dp"
+                                android:layout_marginTop="140dp"
+                                android:text="2200"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView44"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/google_wear_os_smartwatch" />
+
+                            <TextView
+                                android:id="@+id/textView131"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Google Wear OS Smartwatch"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView132"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView133"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="2999"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView45"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/huawei_smartwatch_fit" />
+
+                            <TextView
+                                android:id="@+id/textView134"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Huawei SmartWatch Fit"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView135"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView136"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="3999"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView46"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/noice_color_fit_smart_watch" />
+
+                            <TextView
+                                android:id="@+id/textView137"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Noice Color Fit SmartWatch"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView138"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView139"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="3590"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView47"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/realme_watch_3" />
+
+                            <TextView
+                                android:id="@+id/textView140"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Realme SmartWatch 3"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView141"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView142"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="2500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView48"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/verizon_care_smartwatch" />
+
+                            <TextView
+                                android:id="@+id/textView143"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Verizon Care SmartWatch"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView144"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView145"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="1590"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+                <TextView
+                    android:id="@+id/textView151"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="CAMERA"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="175dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView51"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/canon_eos_90d_camera" />
+
+                            <TextView
+                                android:id="@+id/textView152"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Canon EOS 90D"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView153"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-165dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH."
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView154"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="140dp"
+                                android:text="73500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView52"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/nikon_d7000" />
+
+                            <TextView
+                                android:id="@+id/textView155"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Nikon D7000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView156"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-150dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="viewEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView157"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-30dp"
+                                android:layout_marginTop="140dp"
+                                android:text="68800"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView53"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/samsung_galaxy_camera" />
+
+                            <TextView
+                                android:id="@+id/textView158"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Samsung Galaxy Camera"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView159"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-145dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView160"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-35dp"
+                                android:layout_marginTop="140dp"
+                                android:text="22200"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView54"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/sony_cyber_shot_dshx400v" />
+
+                            <TextView
+                                android:id="@+id/textView161"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Sony CyberShot DSHx400V"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView162"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView163"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="29999"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView55"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/canon_eos_2000d_dslr_camera" />
+
+                            <TextView
+                                android:id="@+id/textView164"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Canon EOS 2000D DSLR Camera"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView165"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView166"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="79599"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView56"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/canon_eos_850d" />
+
+                            <TextView
+                                android:id="@+id/textView167"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Canon EOS 850D Camera"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView168"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView169"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="72500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView57"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/nikon_d500" />
+
+                            <TextView
+                                android:id="@+id/textView170"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Nikon D500"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView171"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView172"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="55000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView58"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/nikon_d780" />
+
+                            <TextView
+                                android:id="@+id/textView173"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Nikon D780"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView174"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView175"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="50099"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView59"
+                                android:layout_width="95dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="0dp"
+                                android:clickable="true"
+                                android:onClick="addToCartItem1"
+                                app:srcCompat="@drawable/sony_dsc_h400" />
+
+                            <TextView
+                                android:id="@+id/textView176"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-90dp"
+                                android:layout_marginTop="100dp"
+                                android:text="Sony DSC H400"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView177"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-148dp"
+                                android:layout_marginTop="140dp"
+                                android:text="KSH. "
+                                android:textAlignment="textEnd"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView178"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="-33dp"
+                                android:layout_marginTop="140dp"
+                                android:text="40000"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/teal_700"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>

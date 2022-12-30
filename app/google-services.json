@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "834815067860",
+    "project_id": "alimama-5612b",
+    "storage_bucket": "alimama-5612b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834815067860:android:0a7d5936cb40a58ae15d41",
+        "android_client_info": {
+          "package_name": "com.example.alimama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834815067860-4uhtjlvvijuif1c1n3q5q9jrm1436g6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI3vs_TVQlgu_Jra9LEWXGG3uQIWeJX8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834815067860-4uhtjlvvijuif1c1n3q5q9jrm1436g6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
